@@ -3,6 +3,8 @@ module.exports = {
         'source/**/*.blade.php',
         'source/**/*.md',
         'source/**/*.html',
+        'config.production.php',
+        'config.php'
     ],
     theme: {
         flex: {
