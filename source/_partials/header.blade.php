@@ -28,16 +28,16 @@
                 <a href="/" class="{{ $page->isIndexSelected() }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
                     Home
                 </a>
-                <a href="{{ $page->baseUrl }}/web-development" class="{{ $page->selected('web-development') }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                <a href="{{ $page->baseUrl }}/web-development" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('web-development') }}">
                     Web Design & Development
                 </a>
-                <a href="{{ $page->baseUrl }}/email-design" class="{{ $page->selected('email-design') }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                <a href="{{ $page->baseUrl }}/email-design" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('email-design') }}">
                     Email Development
                 </a>
-                <a href="{{ $page->baseUrl }}/about" class="{{ $page->selected('about') }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                <a href="{{ $page->baseUrl }}/about" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('about') }}">
                     About Me
                 </a>
-                <a href="{{ $page->baseUrl }}/contact" class="{{ $page->selected('contact') }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                <a href="{{ $page->baseUrl }}/contact" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('contact') }}">
                     Contact
                 </a>
             </nav>
