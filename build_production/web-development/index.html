@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://rojasgustavo.com/web-development">
+    <meta name="description" content="Web &amp; Email developer with UI design and digital marketing experience based in Miami, Florida.">
+    <title>Gustavo Rojas - Web &amp; Email Developer</title>
+    <link rel="icon" type="image/ico" href="/assets/images/logo.ico">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=da7f86cee827deec835d">
+    <script defer src="/assets/build/js/main.js?id=a1cca76943fb3acbaeb8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL8QK6C9V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-XL8QK6C9V9');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1B1B26;
+        }
+    </style>
+
+    </head>
+<body class="antialiased h-screen sm:flex sm:flex-col sm:justify-between">
+<div x-data="{ open: false }"
+     class="bg-primary container mx-auto">
+    <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="mr-auto">
+            <a href="/" class="flex">
+                <span class="sr-only">Gustavo Rojas</span>
+                <img class="h-10 w-auto sm:h-12" src="/assets/images/logo.svg" alt="GR">
+            </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div x-on:click="open = true"
+             class="-mr-2 -my-2 md:hidden">
+            <button type="button" class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-custom-yellow" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex">
+            <nav class="flex items-center md:ml-4 lg:ml-12 md:space-x-5 lg:space-x-12 text-center lg:text-left">
+                <a href="/" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Home
+                </a>
+                <a href="https://rojasgustavo.com//web-development" class="text-white border-white lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Web Design & Development
+                </a>
+                <a href="https://rojasgustavo.com//email-design" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Email Development
+                </a>
+                <a href="https://rojasgustavo.com//about" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    About Me
+                </a>
+                <a href="https://rojasgustavo.com//contact" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div x-show="open"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 transform scale-90"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-90"
+         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary divide-y-2 divide-gray-50 border border-gray-700">
+            <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <img class="h-10 w-auto sm:h-12" src="/assets/images/logo.svg" alt="GR">
+                    </div>
+                    <div x-on:click="open = false" class="-mr-2">
+                        <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Heroicon name: outline/x -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <nav class="flex flex-col items-center space-y-7">
+                        <a href="/" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Home
+                        </a>
+                        <a href="https://rojasgustavo.com//web-development" class="text-white border-white tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Web Design & Development
+                        </a>
+                        <a href="https://rojasgustavo.com//email-design" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Email Development
+                        </a>
+                        <a href="https://rojasgustavo.com//about" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            About Me
+                        </a>
+                        <a href="https://rojasgustavo.com//contact" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Contact
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="text-center px-2">
+        <section class="bg-secondary py-2 lg:py-10 flex-1 sm:flex sm:items-center">
+            <div class="md:w-8/12 lg:w-full max-w-3xl mx-auto my-12">
+                <h1 class="text-white font-bold text-4xl lg:text-7xl leading-tight">Web Design & Development</h1>
+                <p class="text-white lg:text-xl mt-5">Fully responsive websites designed and coded from scratch implementing best UI design and coding practices.</p>
+
+                <a href="#samples" class="text-white lg:text-xl mt-5 block">
+                    <p>View Samples</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-gray-300 block">
+            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+        </svg>
+ 
+                </a>
+
+                <img src="/assets/images/bar.svg" alt="" class="inline-block mb-0 md:mt-5 lg:my-5">
+            </div>
+        </section>
+
+        <section id="samples" class="mb-8 md:mb-16">
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-1 ">
+        <img src="/assets/images/web-design/dior.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-2  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">Dior Product Launch Micro-site</h2>
+        <p class="text-white mt-3 mb-6">Micro-site to showcase a new product line launch offering key
+            information about products and allowing customers to reserve a spot for a related event.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>PHP (Lavarel)</li>
+                                    <li>JavaScript (Alpine.js)</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-2 ">
+        <img src="/assets/images/web-design/american.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-1  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">American Crew Landing Page</h2>
+        <p class="text-white mt-3 mb-6">Landing page showcasing information about a local event for the brand.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>PHP (Lavarel)</li>
+                                    <li>JavaScript (JQuery)</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-1 ">
+        <img src="/assets/images/web-design/telecial.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-2  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">Telecial Saas App Launch Page</h2>
+        <p class="text-white mt-3 mb-6">Website for the launch of a social media media management application.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>PHP (Lavarel)</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-2 ">
+        <img src="/assets/images/web-design/mothers.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-1  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">Dior Mother&#039;s Day Micro-site</h2>
+        <p class="text-white mt-3 mb-6">Micro-site with interactive functionality as a part of a Mother&#039;s Day themed marketing campaign.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>PHP (Lavarel)</li>
+                                    <li>JavaScript (Alpine.js)</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-1 ">
+        <img src="/assets/images/web-design/martinuzzi.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-2  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">Martinuzzi Accessories Fashion Jewelry E-commerce</h2>
+        <p class="text-white mt-3 mb-6">Complete E-commerce store for a fashion jewelry brand.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>Shopify (Liquid)</li>
+                                    <li>JavaScript</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+
+             <article class="flex flex-col sm:flex-row xl:w-8/12 mx-auto items-center justify-center mt-5 sm:mt-12">
+    <div class="md:w-5/12 order-2  md:order-2 ">
+        <img src="/assets/images/web-design/descartables.jpg" alt="" class="shadow-lg">
+    </div>
+
+    <div class="md:w-6/12 order-1  md:order-1  text-center sm:text-left py-8 px-5 sm:p-16 bg-secondary shadow-lg">
+        <h2 class="text-white font-bold text-2xl">DC Medical Supplies Website</h2>
+        <p class="text-white mt-3 mb-6">Website for a medical supplies business.</p>
+
+        <div>
+            <p class="uppercase tracking-wider text-gray-400">Coding Languages</p>
+
+            <ul class="text-white">
+                                    <li>PHP</li>
+                                    <li>JavaScript</li>
+                            </ul>
+        </div>
+
+        <div class="mt-5">
+            <p class="uppercase tracking-wider text-gray-400">Design Tool</p>
+
+            <ul class="text-white">
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</article>
+ 
+        </section>
+
+         <div class="bg-secondary py-16">
+    <p class="text-white text-2xl mb-3 font-bold">Let's get in touch</p>
+
+    <div class="w-64 sm:w-auto mx-auto">
+         <a href="/contact" 
+    class="bg-custom-yellow text-black border-custom-yellow
+            border px-8 py-3 rounded-full flex items-center justify-center sm:inline-block h-14 sm:h-auto hover:bg-custom-yellow hover:border-custom-yellow hover:text-black transition duration-200 ease-in-out">
+        Contact
+    </a>
+
+
+
+ 
+    </div>
+</div>
+ 
+    </div>
+
+<footer class="text-center pt-8 pb-5">
+    <a href="https://www.linkedin.com/in/gustavoerojas/" target="_blank " title="Visit LinkedIn Profile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current h-8 w-8 text-gray-200 inline-block"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </a>
+    <span class="text-gray-200 block mt-3">Miami, Florida, USA</span>
+    <span class="text-gray-200">2021</span>
+</footer>
+
+</body>
+</html>

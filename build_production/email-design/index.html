@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://rojasgustavo.com/email-design">
+    <meta name="description" content="Web &amp; Email developer with UI design and digital marketing experience based in Miami, Florida.">
+    <title>Gustavo Rojas - Web &amp; Email Developer</title>
+    <link rel="icon" type="image/ico" href="/assets/images/logo.ico">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=da7f86cee827deec835d">
+    <script defer src="/assets/build/js/main.js?id=a1cca76943fb3acbaeb8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL8QK6C9V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-XL8QK6C9V9');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1B1B26;
+        }
+    </style>
+
+        <style>
+        .selected {
+            background-color: #CAB232;
+            border-color: #CAB232;
+            color: black;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <style>
+        .gslide-image img {
+            min-width: auto !important;
+        }
+    </style>
+</head>
+<body class="antialiased h-screen sm:flex sm:flex-col sm:justify-between">
+<div x-data="{ open: false }"
+     class="bg-primary container mx-auto">
+    <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="mr-auto">
+            <a href="/" class="flex">
+                <span class="sr-only">Gustavo Rojas</span>
+                <img class="h-10 w-auto sm:h-12" src="/assets/images/logo.svg" alt="GR">
+            </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div x-on:click="open = true"
+             class="-mr-2 -my-2 md:hidden">
+            <button type="button" class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-custom-yellow" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex">
+            <nav class="flex items-center md:ml-4 lg:ml-12 md:space-x-5 lg:space-x-12 text-center lg:text-left">
+                <a href="/" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Home
+                </a>
+                <a href="https://rojasgustavo.com//web-development" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Web Design & Development
+                </a>
+                <a href="https://rojasgustavo.com//email-design" class="text-white border-white lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Email Development
+                </a>
+                <a href="https://rojasgustavo.com//about" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    About Me
+                </a>
+                <a href="https://rojasgustavo.com//contact" class="text-gray-500 border-transparent hover:text-gray-300 lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div x-show="open"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 transform scale-90"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-90"
+         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary divide-y-2 divide-gray-50 border border-gray-700">
+            <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <img class="h-10 w-auto sm:h-12" src="/assets/images/logo.svg" alt="GR">
+                    </div>
+                    <div x-on:click="open = false" class="-mr-2">
+                        <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Heroicon name: outline/x -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <nav class="flex flex-col items-center space-y-7">
+                        <a href="/" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Home
+                        </a>
+                        <a href="https://rojasgustavo.com//web-development" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Web Design & Development
+                        </a>
+                        <a href="https://rojasgustavo.com//email-design" class="text-white border-white tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Email Development
+                        </a>
+                        <a href="https://rojasgustavo.com//about" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            About Me
+                        </a>
+                        <a href="https://rojasgustavo.com//contact" class="text-gray-500 border-transparent hover:text-gray-300 tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Contact
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="text-center px-2">
+        <section class="bg-secondary py-2 md:py-10 flex-1 sm:flex sm:items-center">
+            <div class="md:w-8/12 max-w-3xl mx-auto my-12">
+                <h1 class="text-white font-bold text-4xl lg:text-7xl leading-tight">Email Design & Development</h1>
+                <p class="text-white lg:text-xl mt-5">Email template designs following best practices to achieve fully
+                    responsive, accessible and lightweight emails that are compatible with all major inbox providers and
+                    devices.</p>
+
+                <a href="#samples" class="text-white lg:text-xl mt-5 block">
+                    <p>View Samples</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-gray-300 block">
+            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+        </svg>
+ 
+                </a>
+                <img src="/assets/images/bar.svg" alt="" class="inline-block mb-0 md:my-5">
+            </div>
+        </section>
+
+        <section id="samples" class="mb-8 md:mb-16">
+             <div class="relative">
+    <article x-data="{ version: 'desktop' }" class="mt-10" pre-title="Design + Development" title="Bvlgari News" subtitle="Email template showcasing a newsletter style email highlighting the latest news for the brand." desktop-version="/assets/images/emails/bulgari/bulgari-desktop.jpg" mobile-version="/assets/images/emails/bulgari/bulgari-mobile.jpg">
+        <small class="inline-block uppercase tracking-wider text-sm text-gray-400">Design + Development</small>
+        <h2 class="text-white font-bold text-2xl md:text-3xl">Bvlgari News</h2>
+        <p class="text-white mt-3">Email template showcasing a newsletter style email highlighting the latest news for the brand.</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-3 md:space-x-10 mt-8 justify-center mb-10 flex-wrap">
+             <button x-on:click="version = 'desktop'" x-bind:class="[ version === 'desktop' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Desktop View
+    </button>
+
+
+ 
+
+             <button x-on:click="version = 'mobile'" x-bind:class="[ version === 'mobile' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Mobile View
+    </button>
+
+
+ 
+
+            <div class="mt-4 sm:mt-0">
+                 <button x-on:click="version = 'compatibility'" x-bind:class="[ version === 'compatibility' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Compatibility
+    </button>
+
+
+ 
+            </div>
+        </div>
+
+        <!-- Showcase design template container -->
+        <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto">
+            <div x-show="version !== 'compatibility'">
+                <div class="flex space-x-4 items-center inline-block justify-center mb-5">
+                    <div class="text-white focus:outline-none focus:text-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-white h-5">
+            <path
+                d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+        </svg>
+ 
+                        Preview
+                    </div>
+                </div>
+
+                <div x-show="version === 'desktop'" class="mx-auto" style="max-width: 700px;">
+                    <img src="/assets/images/emails/bulgari/bulgari-desktop.jpg" alt="Email Desktop Version">
+                </div>
+
+                <div x-show="version === 'mobile'" class="mx-auto" style="max-width: 400px;">
+                    <img src="/assets/images/emails/bulgari/bulgari-mobile.jpg" alt="Email Mobile Version">
+                </div>
+            </div>
+
+            <div x-show="version === 'compatibility'" class="px-5">
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 mb-8 border-b border-gray-400">
+                    Mobile</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/iphone-12-ios-14.jpeg"
+             alt="IPhone 12 Pro iOS 14"
+             class="glightbox"
+             data-title="IPhone 12 Pro iOS 14">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 Pro iOS 14</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/iphone-gmail.jpeg"
+             alt="IPhone SE - Gmail"
+             class="glightbox"
+             data-title="IPhone SE - Gmail">
+    </span>
+
+    <p class="py-5 text-white">IPhone SE - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/iphone-gmail-dark.jpeg"
+             alt="IPhone 12 - Gmail iOS 14 (dark)"
+             class="glightbox"
+             data-title="IPhone 12 - Gmail iOS 14 (dark)">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 - Gmail iOS 14 (dark)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/iphone-outlook.jpeg"
+             alt="IPhone 8 - Outlook"
+             class="glightbox"
+             data-title="IPhone 8 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">IPhone 8 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/android-gmail.jpeg"
+             alt="Android 11 - Gmail"
+             class="glightbox"
+             data-title="Android 11 - Gmail">
+    </span>
+
+    <p class="py-5 text-white">Android 11 - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/android-outlook.jpeg"
+             alt="Android 6 - Outlook"
+             class="glightbox"
+             data-title="Android 6 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/android-yahoo.jpeg"
+             alt="Android 6 - Yahoo"
+             class="glightbox"
+             data-title="Android 6 - Yahoo">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Yahoo</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Webmail</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/gmail-chrome.jpeg"
+             alt="Gmail - Chrome"
+             class="glightbox"
+             data-title="Gmail - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/gmail-firefox.jpeg"
+             alt="Gmail - Firefox"
+             class="glightbox"
+             data-title="Gmail - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Firefox</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/outlook-firefox.jpeg"
+             alt="Outlook - Firefox"
+             class="glightbox"
+             data-title="Outlook - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Outlook - Firefox</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/yahoo-safari.jpeg"
+             alt="Yahoo - Safari"
+             class="glightbox"
+             data-title="Yahoo - Safari">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Safari</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Desktop</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/outlook-2016.jpeg"
+             alt="Outlook 2016"
+             class="glightbox"
+             data-title="Outlook 2016">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/outlook-2016-mac.jpeg"
+             alt="Outlook 2016 (MacOS)"
+             class="glightbox"
+             data-title="Outlook 2016 (MacOS)">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016 (MacOS)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/outlook-2013.jpeg"
+             alt="Outlook 2013"
+             class="glightbox"
+             data-title="Outlook 2013">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2013</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/office-365-dark.jpeg"
+             alt="Office 365 Dark (Win)"
+             class="glightbox"
+             data-title="Office 365 Dark (Win)">
+    </span>
+
+    <p class="py-5 text-white">Office 365 Dark (Win)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/bulgari/compatibility/macos-sierra.jpeg"
+             alt="MacOS Sierra"
+             class="glightbox"
+             data-title="MacOS Sierra">
+    </span>
+
+    <p class="py-5 text-white">MacOS Sierra</p>
+</div>
+                </div>
+
+                <small class="text-gray-600 text-sm mt-12 block">Screenshots provided by Testi.at</small>
+            </div>
+        </div>
+    </article>
+</div>
+
+ 
+
+             <div class="relative">
+    <article x-data="{ version: 'desktop' }" class="mt-10" pre-title="Design + Development" title="Movie Streaming Service" subtitle="Email template showcasing the latest available movies for a video streaming service." desktop-version="/assets/images/emails/movies/movies-desktop.jpg" mobile-version="/assets/images/emails/movies/movies-mobile.jpg">
+        <small class="inline-block uppercase tracking-wider text-sm text-gray-400">Design + Development</small>
+        <h2 class="text-white font-bold text-2xl md:text-3xl">Movie Streaming Service</h2>
+        <p class="text-white mt-3">Email template showcasing the latest available movies for a video streaming service.</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-3 md:space-x-10 mt-8 justify-center mb-10 flex-wrap">
+             <button x-on:click="version = 'desktop'" x-bind:class="[ version === 'desktop' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Desktop View
+    </button>
+
+
+ 
+
+             <button x-on:click="version = 'mobile'" x-bind:class="[ version === 'mobile' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Mobile View
+    </button>
+
+
+ 
+
+            <div class="mt-4 sm:mt-0">
+                 <button x-on:click="version = 'compatibility'" x-bind:class="[ version === 'compatibility' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Compatibility
+    </button>
+
+
+ 
+            </div>
+        </div>
+
+        <!-- Showcase design template container -->
+        <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto">
+            <div x-show="version !== 'compatibility'">
+                <div class="flex space-x-4 items-center inline-block justify-center mb-5">
+                    <div class="text-white focus:outline-none focus:text-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-white h-5">
+            <path
+                d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+        </svg>
+ 
+                        Preview
+                    </div>
+                </div>
+
+                <div x-show="version === 'desktop'" class="mx-auto" style="max-width: 700px;">
+                    <img src="/assets/images/emails/movies/movies-desktop.jpg" alt="Email Desktop Version">
+                </div>
+
+                <div x-show="version === 'mobile'" class="mx-auto" style="max-width: 400px;">
+                    <img src="/assets/images/emails/movies/movies-mobile.jpg" alt="Email Mobile Version">
+                </div>
+            </div>
+
+            <div x-show="version === 'compatibility'" class="px-5">
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 mb-8 border-b border-gray-400">
+                    Mobile</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/iphone-12.jpeg"
+             alt="IPhone 12 Pro iOS 14"
+             class="glightbox"
+             data-title="IPhone 12 Pro iOS 14">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 Pro iOS 14</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/iphone-gmail.jpeg"
+             alt="IPhone SE - Gmail"
+             class="glightbox"
+             data-title="IPhone SE - Gmail">
+    </span>
+
+    <p class="py-5 text-white">IPhone SE - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/iphone-outlook.jpeg"
+             alt="IPhone 8 - Outlook"
+             class="glightbox"
+             data-title="IPhone 8 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">IPhone 8 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/android-gmail.jpeg"
+             alt="Android 11 - Gmail"
+             class="glightbox"
+             data-title="Android 11 - Gmail">
+    </span>
+
+    <p class="py-5 text-white">Android 11 - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/android-outlook.jpeg"
+             alt="Android 6 - Outlook"
+             class="glightbox"
+             data-title="Android 6 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Outlook</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Webmail</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/gmail-chrome.jpeg"
+             alt="Gmail - Chrome"
+             class="glightbox"
+             data-title="Gmail - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/outlook-safari.jpeg"
+             alt="Outlook - Safari"
+             class="glightbox"
+             data-title="Outlook - Safari">
+    </span>
+
+    <p class="py-5 text-white">Outlook - Safari</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/yahoo-firefox.jpeg"
+             alt="Yahoo - Firefox"
+             class="glightbox"
+             data-title="Yahoo - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Firefox</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Desktop</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/outlook-2016.jpeg"
+             alt="Outlook 2016"
+             class="glightbox"
+             data-title="Outlook 2016">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/outlook-2016-mac.jpeg"
+             alt="Outlook 2016 (MacOS)"
+             class="glightbox"
+             data-title="Outlook 2016 (MacOS)">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016 (MacOS)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/outlook-2013.jpeg"
+             alt="Outlook 2013"
+             class="glightbox"
+             data-title="Outlook 2013">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2013</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/movies/compatibility/macos-sierra.jpeg"
+             alt="MacOS Sierra"
+             class="glightbox"
+             data-title="MacOS Sierra">
+    </span>
+
+    <p class="py-5 text-white">MacOS Sierra</p>
+</div>
+                </div>
+
+                <small class="text-gray-600 text-sm mt-12 block">Screenshots provided by Testi.at</small>
+            </div>
+        </div>
+    </article>
+</div>
+
+ 
+
+             <div class="relative">
+    <article x-data="{ version: 'desktop' }" class="mt-10" pre-title="Design + Development" title="Travel Agency" subtitle="Email template showcasing popular destinations for a travel agency." desktop-version="/assets/images/emails/travel-agency/desktop.jpg" mobile-version="/assets/images/emails/travel-agency/mobile.jpg">
+        <small class="inline-block uppercase tracking-wider text-sm text-gray-400">Design + Development</small>
+        <h2 class="text-white font-bold text-2xl md:text-3xl">Travel Agency</h2>
+        <p class="text-white mt-3">Email template showcasing popular destinations for a travel agency.</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-3 md:space-x-10 mt-8 justify-center mb-10 flex-wrap">
+             <button x-on:click="version = 'desktop'" x-bind:class="[ version === 'desktop' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Desktop View
+    </button>
+
+
+ 
+
+             <button x-on:click="version = 'mobile'" x-bind:class="[ version === 'mobile' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Mobile View
+    </button>
+
+
+ 
+
+            <div class="mt-4 sm:mt-0">
+                 <button x-on:click="version = 'compatibility'" x-bind:class="[ version === 'compatibility' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Compatibility
+    </button>
+
+
+ 
+            </div>
+        </div>
+
+        <!-- Showcase design template container -->
+        <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto">
+            <div x-show="version !== 'compatibility'">
+                <div class="flex space-x-4 items-center inline-block justify-center mb-5">
+                    <div class="text-white focus:outline-none focus:text-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-white h-5">
+            <path
+                d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+        </svg>
+ 
+                        Preview
+                    </div>
+                </div>
+
+                <div x-show="version === 'desktop'" class="mx-auto" style="max-width: 700px;">
+                    <img src="/assets/images/emails/travel-agency/desktop.jpg" alt="Email Desktop Version">
+                </div>
+
+                <div x-show="version === 'mobile'" class="mx-auto" style="max-width: 400px;">
+                    <img src="/assets/images/emails/travel-agency/mobile.jpg" alt="Email Mobile Version">
+                </div>
+            </div>
+
+            <div x-show="version === 'compatibility'" class="px-5">
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 mb-8 border-b border-gray-400">
+                    Mobile</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/iphone-11.jpeg"
+             alt="IPhone 12 Pro iOS 14"
+             class="glightbox"
+             data-title="IPhone 12 Pro iOS 14">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 Pro iOS 14</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/iphone-gmail.jpeg"
+             alt="IPhone SE - Gmail"
+             class="glightbox"
+             data-title="IPhone SE - Gmail">
+    </span>
+
+    <p class="py-5 text-white">IPhone SE - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/iphone-outlook.jpeg"
+             alt="IPhone 8 - Outlook"
+             class="glightbox"
+             data-title="IPhone 8 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">IPhone 8 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/android-gmail.jpeg"
+             alt="Android 11 - Gmail"
+             class="glightbox"
+             data-title="Android 11 - Gmail">
+    </span>
+
+    <p class="py-5 text-white">Android 11 - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/android-outlook.jpeg"
+             alt="Android 6 - Outlook"
+             class="glightbox"
+             data-title="Android 6 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/android-yahoo.jpeg"
+             alt="Android - Yahoo"
+             class="glightbox"
+             data-title="Android - Yahoo">
+    </span>
+
+    <p class="py-5 text-white">Android - Yahoo</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Webmail</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/gmail-chrome.jpeg"
+             alt="Gmail - Chrome"
+             class="glightbox"
+             data-title="Gmail - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/yahoo-chrome.jpeg"
+             alt="Yahoo - Chrome"
+             class="glightbox"
+             data-title="Yahoo - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/yahoo-firefox.jpeg"
+             alt="Yahoo - Firefox"
+             class="glightbox"
+             data-title="Yahoo - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Firefox</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/outlook-safari.jpeg"
+             alt="Outlook - Safari"
+             class="glightbox"
+             data-title="Outlook - Safari">
+    </span>
+
+    <p class="py-5 text-white">Outlook - Safari</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Desktop</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/outlook-2016.jpeg"
+             alt="Outlook 2016"
+             class="glightbox"
+             data-title="Outlook 2016">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/outlook-2016-mac.jpeg"
+             alt="Outlook 2016 (MacOS)"
+             class="glightbox"
+             data-title="Outlook 2016 (MacOS)">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016 (MacOS)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/outlook-2013.jpeg"
+             alt="Outlook 2013"
+             class="glightbox"
+             data-title="Outlook 2013">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2013</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/macos-sierra.jpeg"
+             alt="MacOS Sierra"
+             class="glightbox"
+             data-title="MacOS Sierra">
+    </span>
+
+    <p class="py-5 text-white">MacOS Sierra</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/travel-agency/compatibility/office-365-dark.jpeg"
+             alt="Office 365 Dark"
+             class="glightbox"
+             data-title="Office 365 Dark">
+    </span>
+
+    <p class="py-5 text-white">Office 365 Dark</p>
+</div>
+                </div>
+
+                <small class="text-gray-600 text-sm mt-12 block">Screenshots provided by Testi.at</small>
+            </div>
+        </div>
+    </article>
+</div>
+
+ 
+
+             <div class="relative">
+    <article x-data="{ version: 'desktop' }" class="mt-10" pre-title="Design + Development" title="Fashion Blog" subtitle="Email template showcasing posts from a fashion blog." desktop-version="/assets/images/emails/pink/desktop.jpg" mobile-version="/assets/images/emails/pink/mobile.jpg">
+        <small class="inline-block uppercase tracking-wider text-sm text-gray-400">Design + Development</small>
+        <h2 class="text-white font-bold text-2xl md:text-3xl">Fashion Blog</h2>
+        <p class="text-white mt-3">Email template showcasing posts from a fashion blog.</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-3 md:space-x-10 mt-8 justify-center mb-10 flex-wrap">
+             <button x-on:click="version = 'desktop'" x-bind:class="[ version === 'desktop' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Desktop View
+    </button>
+
+
+ 
+
+             <button x-on:click="version = 'mobile'" x-bind:class="[ version === 'mobile' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Mobile View
+    </button>
+
+
+ 
+
+            <div class="mt-4 sm:mt-0">
+                 <button x-on:click="version = 'compatibility'" x-bind:class="[ version === 'compatibility' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Compatibility
+    </button>
+
+
+ 
+            </div>
+        </div>
+
+        <!-- Showcase design template container -->
+        <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto">
+            <div x-show="version !== 'compatibility'">
+                <div class="flex space-x-4 items-center inline-block justify-center mb-5">
+                    <div class="text-white focus:outline-none focus:text-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-white h-5">
+            <path
+                d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+        </svg>
+ 
+                        Preview
+                    </div>
+                </div>
+
+                <div x-show="version === 'desktop'" class="mx-auto" style="max-width: 700px;">
+                    <img src="/assets/images/emails/pink/desktop.jpg" alt="Email Desktop Version">
+                </div>
+
+                <div x-show="version === 'mobile'" class="mx-auto" style="max-width: 400px;">
+                    <img src="/assets/images/emails/pink/mobile.jpg" alt="Email Mobile Version">
+                </div>
+            </div>
+
+            <div x-show="version === 'compatibility'" class="px-5">
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 mb-8 border-b border-gray-400">
+                    Mobile</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/iphone-12.jpeg"
+             alt="IPhone 12 Pro iOS 14"
+             class="glightbox"
+             data-title="IPhone 12 Pro iOS 14">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 Pro iOS 14</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/iphone-gmail.jpeg"
+             alt="IPhone SE - Gmail"
+             class="glightbox"
+             data-title="IPhone SE - Gmail">
+    </span>
+
+    <p class="py-5 text-white">IPhone SE - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/iphone-outlook.jpeg"
+             alt="IPhone 8 - Outlook"
+             class="glightbox"
+             data-title="IPhone 8 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">IPhone 8 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/iphone-dark.jpeg"
+             alt="IPhone Dark"
+             class="glightbox"
+             data-title="IPhone Dark">
+    </span>
+
+    <p class="py-5 text-white">IPhone Dark</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/android-gmail.jpeg"
+             alt="Android 11 - Gmail"
+             class="glightbox"
+             data-title="Android 11 - Gmail">
+    </span>
+
+    <p class="py-5 text-white">Android 11 - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/android-outlook.jpeg"
+             alt="Android 6 - Outlook"
+             class="glightbox"
+             data-title="Android 6 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Outlook</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Webmail</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/gmail-chrome.jpeg"
+             alt="Gmail - Chrome"
+             class="glightbox"
+             data-title="Gmail - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/yahoo-firefox.jpeg"
+             alt="Yahoo - Firefox"
+             class="glightbox"
+             data-title="Yahoo - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Firefox</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/outlook-safari.jpeg"
+             alt="Outlook - Safari"
+             class="glightbox"
+             data-title="Outlook - Safari">
+    </span>
+
+    <p class="py-5 text-white">Outlook - Safari</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Desktop</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/outlook-2019.jpeg"
+             alt="Outlook 2019"
+             class="glightbox"
+             data-title="Outlook 2019">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2019</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/outlook-2016.jpeg"
+             alt="Outlook 2016"
+             class="glightbox"
+             data-title="Outlook 2016">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/outlook-2013.jpeg"
+             alt="Outlook 2013"
+             class="glightbox"
+             data-title="Outlook 2013">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2013</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/office-365-dark.jpeg"
+             alt="Office Dark 365"
+             class="glightbox"
+             data-title="Office Dark 365">
+    </span>
+
+    <p class="py-5 text-white">Office Dark 365</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/pink/compatibility/macos-sierra.jpeg"
+             alt="MacOS Sierra"
+             class="glightbox"
+             data-title="MacOS Sierra">
+    </span>
+
+    <p class="py-5 text-white">MacOS Sierra</p>
+</div>
+                </div>
+
+                <small class="text-gray-600 text-sm mt-12 block">Screenshots provided by Testi.at</small>
+            </div>
+        </div>
+    </article>
+</div>
+
+ 
+
+             <div class="relative">
+    <article x-data="{ version: 'desktop' }" class="mt-10" pre-title="Design + Development" title="Fashion Accessories Boutique" subtitle="Email template showcasing new products arrivals." desktop-version="/assets/images/emails/martinuzzi/desktop.jpg" mobile-version="/assets/images/emails/martinuzzi/mobile.jpg">
+        <small class="inline-block uppercase tracking-wider text-sm text-gray-400">Design + Development</small>
+        <h2 class="text-white font-bold text-2xl md:text-3xl">Fashion Accessories Boutique</h2>
+        <p class="text-white mt-3">Email template showcasing new products arrivals.</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-3 md:space-x-10 mt-8 justify-center mb-10 flex-wrap">
+             <button x-on:click="version = 'desktop'" x-bind:class="[ version === 'desktop' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Desktop View
+    </button>
+
+
+ 
+
+             <button x-on:click="version = 'mobile'" x-bind:class="[ version === 'mobile' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Mobile View
+    </button>
+
+
+ 
+
+            <div class="mt-4 sm:mt-0">
+                 <button x-on:click="version = 'compatibility'" x-bind:class="[ version === 'compatibility' ? 'selected' : '' ]"
+            class="bg-transparent text-white border-white
+            border px-4 md:px-8 py-3 rounded-full hover:bg-custom-yellow hover:border-custom-yellow hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-custom-yellow transition duration-200 ease-in-out">
+        Compatibility
+    </button>
+
+
+ 
+            </div>
+        </div>
+
+        <!-- Showcase design template container -->
+        <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto">
+            <div x-show="version !== 'compatibility'">
+                <div class="flex space-x-4 items-center inline-block justify-center mb-5">
+                    <div class="text-white focus:outline-none focus:text-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+     viewBox="0 0 24 24" class="fill-current inline-block text-white h-5">
+            <path
+                d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+        </svg>
+ 
+                        Preview
+                    </div>
+                </div>
+
+                <div x-show="version === 'desktop'" class="mx-auto" style="max-width: 700px;">
+                    <img src="/assets/images/emails/martinuzzi/desktop.jpg" alt="Email Desktop Version">
+                </div>
+
+                <div x-show="version === 'mobile'" class="mx-auto" style="max-width: 400px;">
+                    <img src="/assets/images/emails/martinuzzi/mobile.jpg" alt="Email Mobile Version">
+                </div>
+            </div>
+
+            <div x-show="version === 'compatibility'" class="px-5">
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 mb-8 border-b border-gray-400">
+                    Mobile</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/iphone-11.jpeg"
+             alt="IPhone 12 Pro iOS 14"
+             class="glightbox"
+             data-title="IPhone 12 Pro iOS 14">
+    </span>
+
+    <p class="py-5 text-white">IPhone 12 Pro iOS 14</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/iphone-gmail.jpeg"
+             alt="IPhone SE - Gmail"
+             class="glightbox"
+             data-title="IPhone SE - Gmail">
+    </span>
+
+    <p class="py-5 text-white">IPhone SE - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/iphone-outlook.jpeg"
+             alt="IPhone 8 - Outlook"
+             class="glightbox"
+             data-title="IPhone 8 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">IPhone 8 - Outlook</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/android-gmail.jpeg"
+             alt="Android 11 - Gmail"
+             class="glightbox"
+             data-title="Android 11 - Gmail">
+    </span>
+
+    <p class="py-5 text-white">Android 11 - Gmail</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/android-outlook.jpeg"
+             alt="Android 6 - Outlook"
+             class="glightbox"
+             data-title="Android 6 - Outlook">
+    </span>
+
+    <p class="py-5 text-white">Android 6 - Outlook</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Webmail</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/gmail-chrome.jpeg"
+             alt="Gmail - Chrome"
+             class="glightbox"
+             data-title="Gmail - Chrome">
+    </span>
+
+    <p class="py-5 text-white">Gmail - Chrome</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/yahoo-firefox.jpeg"
+             alt="Yahoo - Firefox"
+             class="glightbox"
+             data-title="Yahoo - Firefox">
+    </span>
+
+    <p class="py-5 text-white">Yahoo - Firefox</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/outlook-safari.jpeg"
+             alt="Outlook - Safari"
+             class="glightbox"
+             data-title="Outlook - Safari">
+    </span>
+
+    <p class="py-5 text-white">Outlook - Safari</p>
+</div>
+                </div>
+
+                <p class="inline-block uppercase tracking-wider text-sm text-gray-400 my-8 border-b border-gray-400">
+                    Desktop</p>
+
+                <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 gap-y-12">
+                    <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/outlook-2019.jpeg"
+             alt="Outlook 2019"
+             class="glightbox"
+             data-title="Outlook 2019">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2019</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/outlook-2016.jpeg"
+             alt="Outlook 2016"
+             class="glightbox"
+             data-title="Outlook 2016">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/outlook-2016-mac.jpeg"
+             alt="Outlook 2016 (MacOS)"
+             class="glightbox"
+             data-title="Outlook 2016 (MacOS)">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2016 (MacOS)</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/outlook-2013.jpeg"
+             alt="Outlook 2013"
+             class="glightbox"
+             data-title="Outlook 2013">
+    </span>
+
+    <p class="py-5 text-white">Outlook 2013</p>
+</div>
+ 
+                     <div x-data
+     x-init="lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });"
+     class="bg-transparent border border-gray-800 rounded shadow-md xl:w-72 lg:w-52 mx-auto hover:border-custom-yellow hover:shadow-2xl cursor-pointer transition duration-200">
+    <span class="h-60 overflow-hidden block">
+        <img src="/assets/images/emails/martinuzzi/compatibility/macos-sierra.jpeg"
+             alt="MacOS Sierra"
+             class="glightbox"
+             data-title="MacOS Sierra">
+    </span>
+
+    <p class="py-5 text-white">MacOS Sierra</p>
+</div>
+                </div>
+
+                <small class="text-gray-600 text-sm mt-12 block">Screenshots provided by Testi.at</small>
+            </div>
+        </div>
+    </article>
+</div>
+
+ 
+        </section>
+
+         <div class="bg-secondary py-16">
+    <p class="text-white text-2xl mb-3 font-bold">Let's get in touch</p>
+
+    <div class="w-64 sm:w-auto mx-auto">
+         <a href="/contact" 
+    class="bg-custom-yellow text-black border-custom-yellow
+            border px-8 py-3 rounded-full flex items-center justify-center sm:inline-block h-14 sm:h-auto hover:bg-custom-yellow hover:border-custom-yellow hover:text-black transition duration-200 ease-in-out">
+        Contact
+    </a>
+
+
+
+ 
+    </div>
+</div>
+ 
+    </div>
+
+<footer class="text-center pt-8 pb-5">
+    <a href="https://www.linkedin.com/in/gustavoerojas/" target="_blank " title="Visit LinkedIn Profile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current h-8 w-8 text-gray-200 inline-block"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </a>
+    <span class="text-gray-200 block mt-3">Miami, Florida, USA</span>
+    <span class="text-gray-200">2021</span>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+</body>
+</html>
