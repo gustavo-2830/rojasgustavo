@@ -92,7 +92,7 @@
                 <p class="text-white uppercase mb-1 text-left mt-10">ADOBE Dreamweaver</p>
                 <x-progress-bar width="w-9/12"></x-progress-bar>
 
-                <p class="text-white uppercase mb-1 text-left mt-10">Email ESP (Klaviyo & Mailchimp)</p>
+                <p class="text-white uppercase mb-1 text-left mt-10">Email ESP (Klaviyo, Mailchimp, Constant Contact & Campaign Monitor)</p>
                 <x-progress-bar width="w-10/12"></x-progress-bar>
             </div>
         </section>
