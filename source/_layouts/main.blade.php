@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ $page->getUrl() }}">
-    <meta name="description" content="{{ $page->description }}">
-    <title>{{ $page->title }}</title>
+    <meta name="description" content="@yield('description', 'Web & HTML Email developer freelancer with more than 8 years of experience helping businesses create compelling digital experiences with email marketing and websites.')">
+    <title>@yield('title', 'Web & Email Developer Freelancer') | Gustavo Rojas</title>
     <link rel="icon" type="image/ico" href="/assets/images/logo.ico">
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>

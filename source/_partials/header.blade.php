@@ -28,18 +28,19 @@
                 <a href="/" class="{{ $page->isIndexSelected() }} lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase">
                     Home
                 </a>
-                <a href="{{ $page->baseUrl }}/web-development" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('web-development') }}">
-                    Web Design & Development
-                </a>
                 <a href="{{ $page->baseUrl }}/email-design" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('email-design') }}">
                     Email Development
+                </a>
+                <a href="{{ $page->baseUrl }}/web-development" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('web-development') }}">
+                    Web Design & Development
                 </a>
                 <a href="{{ $page->baseUrl }}/about" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('about') }}">
                     About Me
                 </a>
-                <a href="{{ $page->baseUrl }}/contact" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('contact') }}">
-                    Contact
-                </a>
+                <x-button href="{{ $page->baseUrl }}/contact">Contact</x-button>
+
+                <img src="/assets/images/top-rated.png?id=1" alt=""
+                     class="inline-block w-36">
             </nav>
         </div>
     </div>
@@ -52,7 +53,7 @@
          x-transition:leave="transition ease-in duration-300"
          x-transition:leave-start="opacity-100 transform scale-100"
          x-transition:leave-end="opacity-0 transform scale-90"
-         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+         class="absolute top-0 inset-x-0 p-2 z-50 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary divide-y-2 divide-gray-50 border border-gray-700">
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
@@ -75,11 +76,11 @@
                         <a href="/" class="{{ $page->isIndexSelected() }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
                             Home
                         </a>
-                        <a href="{{ $page->baseUrl }}/web-development" class="{{ $page->selected('web-development') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
-                            Web Design & Development
-                        </a>
                         <a href="{{ $page->baseUrl }}/email-design" class="{{ $page->selected('email-design') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
                             Email Development
+                        </a>
+                        <a href="{{ $page->baseUrl }}/web-development" class="{{ $page->selected('web-development') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
+                            Web Design & Development
                         </a>
                         <a href="{{ $page->baseUrl }}/about" class="{{ $page->selected('about') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
                             About Me
