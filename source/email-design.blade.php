@@ -641,4 +641,10 @@
 
         <x-call-to-action></x-call-to-action>
     </div>
+
+    <div class="fixed bottom-4 right-4 bg-custom-yellow p-5 rounded-lg font-bold text-primary text-center hover:bg-white transition duration-300">
+        <a href="https://www.figma.com/proto/hnaNk1e5eoYEcOSc9dO5zm/Email-Design-%26-Development---Gustavo-Rojas?page-id=0%3A1&type=design&node-id=1-211&viewport=649%2C1050%2C0.25&t=dnORsCnoYPAlACqd-1&scaling=min-zoom&mode=design" target="_blank">
+        See more designs
+        </a>
+    </div>
 @endsection
