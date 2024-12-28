@@ -16,8 +16,8 @@
 
             <img src="/assets/images/bar.svg" alt="" class="inline-block mb-5">
 
-            <p class="text-white text-base text-center sm:text-left lg:text-lg w-full sm:w-10/12 mt-3">Web & Email
-                developer freelancer with more than 8 years of experience helping businesses of all sizes create
+            <p class="text-white text-base text-center sm:text-left lg:text-lg w-full sm:w-10/12 mt-3">Web developer & Email
+                marketing freelancer with more than 8 years of experience helping businesses of all sizes create
                 compelling digital experiences with email marketing and websites.</p>
 
             <p class="text-white text-base text-center sm:text-left lg:text-lg w-full sm:w-10/12 mt-5">Mailchimp, Klaviyo and Shopify expert.</p>
@@ -31,7 +31,7 @@
             <p class="text-white text-base text-center sm:text-left lg:text-lg w-full sm:w-10/12 mt-8 font-bold">Check out the services</p>
 
             <div class="flex flex-col w-full text-center sm:w-auto sm:flex-row sm:space-x-10 space-y-5 sm:space-y-0 mt-5">
-                <x-button href="{{ $page->baseUrl }}/email-design">Email Development</x-button>
+                <x-button href="{{ $page->baseUrl }}/email-design">Email Marketing</x-button>
                 <x-button href="{{ $page->baseUrl }}/web-development">Web Design & Development</x-button>
             </div>
         </div>
