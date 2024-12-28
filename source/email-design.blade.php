@@ -112,8 +112,8 @@
     <div class="text-center px-2">
         <section class="bg-secondary pt-2 md:pt-10 pb-12">
             <div class="md:w-8/12 max-w-3xl mx-auto my-8">
-                <h1 class="text-white font-bold text-4xl lg:text-7xl leading-tight">Email Design & Development</h1>
-                <p class="text-white lg:text-xl mt-5">Freelance email designer and HTML developer with focus on
+                <h1 class="text-white font-bold text-4xl lg:text-7xl leading-tight">Email Marketing</h1>
+                <p class="text-white lg:text-xl mt-5">Freelance email marketing expert with focus on
                     E-commerce brands and marketing agencies of all sizes and industries.</p>
                 <img src="/assets/images/bar.svg" alt="" class="inline-block mt-5 md:my-5">
 
@@ -187,15 +187,27 @@
         </section>
 
         <section class="text-white md:w-8/12 max-w-3xl mx-auto text-left space-y-4 py-10 md:py-14 px-4">
-            <p>I can craft pro-level emails for your brand that are carefully designed and hand-coded following best
-                practices.
-                All emails are fully responsive (look great on all screen sizes), accessible, lightweight, and
-                compatible with all major inbox providers and devices. Emails are supported by all major ESP’s like
-                Mailchimp, Klaviyo and Campaign Monitor.</p>
+            <p>
+                Full-service email marketing expert who can take charge of your entire email marketing program.
+                From strategy to execution, I handle everything to ensure your business gets the results it needs.
+            </p>
 
-            <p>I can also handle day-to-day email efforts by building weekly emails following your content calendar. You
-                will get complete support including design, coding, testing, set up, and deployment for each
-                campaign.</p>
+            <p>
+                I’ll design and hand-code professional, responsive emails that look great on every device, while also
+                crafting a strategic plan tailored to your goals—whether that’s growing your email list, engaging your
+                audience, nurturing relationships, or increasing sales.
+            </p>
+
+            <p>You’ll get complete email marketing support, including:</p>
+
+            <ul class="list-disc list-inside">
+                <li>Developing an email marketing strategy aligned with your business goals</li>
+                <li>Designing, coding, and testing campaigns for compatibility and accessibility</li>
+                <li>Running A/B tests to improve engagement</li>
+                <li>Building and managing your subscriber lists</li>
+                <li>Setting up automated flows/journeys to nurture leads and drive conversions</li>
+                <li>Analyzing campaign performance and optimizing for better results</li>
+            </ul>
         </section>
 
         <section x-data="{ slider:  '', selected: 1 }" x-init="slider = new Splide('#esp-container', {
@@ -247,7 +259,8 @@
                                 <img src="/assets/images/certifications/mailchimp.png" alt="" class="inline-block w-56">
 
                                 <div class="text-left text-white px-4">
-                                    <p class="mb-5">As a Mailchimp Certified email developer freelancer, I can offer full support
+                                    <p class="mb-5">As a Mailchimp Certified email developer freelancer, I can offer
+                                        full support
                                         to help you
                                         get the most out the platform. Whether it is managing your audiences,
                                         segmenting, building automations, setting up signup forms and landing pages, or
@@ -278,7 +291,8 @@
                                     <p class="mb-5">Similarly, I'm an email design freelancer certified on Klaviyo. I
                                         can assist your brand or marketing agency to create
                                         successful campaigns, smart flows, effective signup forms and organize your
-                                        audiences and segments. To put in simply, I can be your go-to person for all things Klaviyo.</p>
+                                        audiences and segments. To put in simply, I can be your go-to person for all
+                                        things Klaviyo.</p>
 
                                     <p>
                                         Specifically, the Klaviyo services offered are:
@@ -304,7 +318,8 @@
         <div class="bg-secondary shadow-xl py-10 2xl:w-9/12 lg:w-10/12 mx-auto flex flex-col md:flex-row md:gap-x-12 gap-y-8 items-center justify-center mt-12 px-6 py-12">
             <div class="text-white text-left max-w-2xl">
                 <h3 class="mb-3 font-bold text-xl md:text-2xl">Top 3% Rated Email Marketing Freelancer</h3>
-                <p class="mb-4">I have successfully completed a great deal of email projects as an email freelancer in the past few years. </p>
+                <p class="mb-4">I have successfully completed a great deal of email projects as an email freelancer in
+                    the past few years. </p>
 
                 <p>
                     Upwork has awarded me with the Top Rated Plus badge for building a strong reputation and working on
@@ -643,8 +658,9 @@
     </div>
 
     <div class="fixed bottom-4 right-4 bg-custom-yellow p-5 rounded-lg font-bold text-primary text-center hover:bg-white transition duration-300">
-        <a href="https://www.figma.com/proto/hnaNk1e5eoYEcOSc9dO5zm/Email-Design-%26-Development---Gustavo-Rojas?page-id=0%3A1&type=design&node-id=1-211&viewport=649%2C1050%2C0.25&t=dnORsCnoYPAlACqd-1&scaling=min-zoom&mode=design" target="_blank">
-        See more designs
+        <a href="https://www.figma.com/proto/hnaNk1e5eoYEcOSc9dO5zm/Email-Design-%26-Development---Gustavo-Rojas?page-id=0%3A1&type=design&node-id=1-211&viewport=649%2C1050%2C0.25&t=dnORsCnoYPAlACqd-1&scaling=min-zoom&mode=design"
+           target="_blank">
+            See more designs
         </a>
     </div>
 @endsection

@@ -29,7 +29,7 @@
                     Home
                 </a>
                 <a href="{{ $page->baseUrl }}/email-design" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('email-design') }}">
-                    Email Development
+                    Email Marketing
                 </a>
                 <a href="{{ $page->baseUrl }}/web-development" class="lg:tracking-wider border-b text-sm hover:border-white transition duration-200 uppercase {{ $page->selected('web-development') }}">
                     Web Design & Development
@@ -77,7 +77,7 @@
                             Home
                         </a>
                         <a href="{{ $page->baseUrl }}/email-design" class="{{ $page->selected('email-design') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
-                            Email Development
+                            Email Marketing
                         </a>
                         <a href="{{ $page->baseUrl }}/web-development" class="{{ $page->selected('web-development') }} tracking-wider border-b text-base hover:border-white transition duration-200 uppercase">
                             Web Design & Development
