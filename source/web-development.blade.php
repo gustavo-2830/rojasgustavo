@@ -84,14 +84,6 @@
                     :codingLanguages="['Shopify (Liquid)', 'JavaScript']"
                     direction="left"
             ></x-site-showcase>
-
-            <x-site-showcase
-                    title="DC Medical Supplies Website"
-                    description="Website for a medical supplies business."
-                    image-url="/assets/images/web-design/descartables.jpg"
-                    :codingLanguages="['PHP', 'JavaScript']"
-                    direction="right"
-            ></x-site-showcase>
         </section>
 
         <x-call-to-action></x-call-to-action>

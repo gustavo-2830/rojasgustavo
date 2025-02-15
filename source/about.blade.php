@@ -100,11 +100,11 @@
         <section class="bg-secondary py-10 mt-16">
             <h2 class="text-white text-center font-bold text-3xl leading-tight">Experience</h2>
             <h3 class="text-white text-center font-bold text-xl lg:text-2xl leading-tight mt-10">Independent Email & Web Developer Freelancer</h3>
-            <p class="text-white mt-3">December 2020 - present</p>
+            <p class="text-white mt-3">December 2021 - present</p>
 
             <h3 class="text-white text-center font-bold text-xl lg:text-2xl leading-tight mt-10">Elliptic Marketing</h3>
             <p class="text-white mt-3">Digital Marketing Developer<br>
-                August 2015 - December 2020</p>
+                August 2015 - December 2021</p>
         </section>
 
         <section class="md:w-10/12 xl:w-6/12 mx-auto text-left px-2 ">
