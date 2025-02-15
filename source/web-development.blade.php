@@ -29,6 +29,22 @@
 
         <section id="samples" class="mb-8 md:mb-16">
             <x-site-showcase
+                    title="Custom Shopify Theme Development for Clothing Brand"
+                    description="Modern theme designed and coded from scratch with multiple module variations for greater customization."
+                    image-url="/assets/images/web-design/clothing-brand.webp"
+                    :codingLanguages="['Shopify (Liquid)', 'JavaScript (Alpine.js)']"
+                    direction="left"
+            ></x-site-showcase>
+
+            <x-site-showcase
+                    title="Chess League Website Redesign"
+                    description="Redesign for chess brand website for a modern and sleek look, improving user experience and engagement."
+                    image-url="/assets/images/web-design/chess.webp"
+                    :codingLanguages="['HTML/CSS', 'JavaScript (Alpine.js)']"
+                    direction="right"
+            ></x-site-showcase>
+
+            <x-site-showcase
                     title="Dior Product Launch Micro-site"
                     description="Micro-site to showcase a new product line launch offering key
             information about products and allowing customers to reserve a spot for a related event."
