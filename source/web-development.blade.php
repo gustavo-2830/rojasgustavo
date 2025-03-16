@@ -54,11 +54,19 @@
             ></x-site-showcase>
 
             <x-site-showcase
+                    title="Custom Shopify Theme for Skincare Brand"
+                    description="Modern theme designed and coded from scratch with multiple module variations for greater customization."
+                    image-url="/assets/images/web-design/skincare.webp"
+                    :codingLanguages="['Shopify (Liquid)', 'JavaScript (Alpine.js)']"
+                    direction="right"
+            ></x-site-showcase>
+
+            <x-site-showcase
                     title="American Crew Landing Page"
                     description="Landing page showcasing information about a local event for the brand."
                     image-url="/assets/images/web-design/american.jpg"
                     :codingLanguages="['PHP (Lavarel)', 'JavaScript (JQuery)']"
-                    direction="right"
+                    direction="left"
             ></x-site-showcase>
 
             <x-site-showcase
@@ -66,7 +74,7 @@
                     description="Website for the launch of a social media media management application."
                     image-url="/assets/images/web-design/telecial.jpg"
                     :codingLanguages="['PHP (Lavarel)']"
-                    direction="left"
+                    direction="right"
             ></x-site-showcase>
 
             <x-site-showcase
@@ -74,7 +82,7 @@
                     description="Micro-site with interactive functionality as a part of a Mother's Day themed marketing campaign."
                     image-url="/assets/images/web-design/mothers.jpg"
                     :codingLanguages="['PHP (Lavarel)', 'JavaScript (Alpine.js)']"
-                    direction="right"
+                    direction="left"
             ></x-site-showcase>
 
             <x-site-showcase
@@ -82,7 +90,7 @@
                     description="Complete E-commerce store for a fashion jewelry brand."
                     image-url="/assets/images/web-design/martinuzzi.jpg"
                     :codingLanguages="['Shopify (Liquid)', 'JavaScript']"
-                    direction="left"
+                    direction="right"
             ></x-site-showcase>
         </section>
 
